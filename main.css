@@ -1,6 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
 
+body {
+    background-image: url('images/bg-intro-mobile.png');
+    background-color: hsl(0, 100%, 74%);
+}
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.text-container {
+    color: white;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.text-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.75em;
+}
+
+.text-container p {
+    margin: 10px auto;
+    font-size: 0.9em;
+    width: 85%;
+    line-height: 1.6em; 
+}
+
+.card-container {
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+}
+
+.purple-card {
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    width: 80%;
+    padding: 15px 30px;
+    color: white;
+    margin: 20px auto;
+}
+
+.purple-card p {
+    width: 70%;
+    margin-left: 40px;
+}
+
+.purple-card span {
+    font-weight: 600;
+}
+
+.input-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: hsl(246, 25%, 77%) 1px solid;
+    font-weight: 600;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.input-card p {
+    text-align: center;
+    font-size: 0.7em;
+    width: 70%;
+    color: hsl(246, 25%, 77%);
+}
+
+.input-card p span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700; 
+}
 
 /***Footer***/
 
@@ -10,4 +122,13 @@
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    body {
+        background-image: url('images/bg-intro-desktop.png');
+        background-color: hsl(0, 100%, 74%);
+    }
+
 }
