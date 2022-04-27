@@ -19,16 +19,36 @@
       <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
     </div>
     <div class="card-container">
-      <div class="purple-card">
+      <div class="purple-card card-shadow">
         <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       </div>
-      <div class="input-card">
-        <input type="text" id="fname" name="fname" value="First Name">
-        <input type="text" id="lname" name="lname" value="Last Name">
-        <input type="email" id="email" name="email" value="Email Address">
-        <input type="text" id="password" name="password" value="Password">
+      <div class="input-card card-shadow">
+        <label>
+          <input type="text" id="fname" name="fname" value="First Name">
+        </label>
+        <div class="error-message hide">
+          <p class="red">First Name cannot be empty</p>
+        </div>
+        <label>
+          <input type="text" id="lname" name="lname" value="Last Name">
+        </label>
+        <div class="error-message hide">
+          <p class="red">Last Name cannot be empty</p>
+        </div>
+        <label>
+          <input type="email" id="email" name="email" value="Email Address">
+        </label>
+        <div class="error-message hide">
+          <p class="red">Looks like this is not an email</p>
+        </div>
+        <label>
+          <input type="text" id="password" name="password" value="Password">
+        </label>
+        <div class="error-message hide">
+          <p class="red">Password cannot be empty</p>
+        </div>
         <button type="submit" id="submit">Claim your free trial</button>
-        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        <p class="grey">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </div>
     </div>
   </div>

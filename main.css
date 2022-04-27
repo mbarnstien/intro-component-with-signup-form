@@ -49,6 +49,15 @@ body {
     flex-direction: column;
 }
 
+.card-shadow {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7.5px hsl(0, 100%, 71%);
+}
+
 .purple-card {
     text-align: center;
     background-color: hsl(248, 32%, 49%);
@@ -80,30 +89,73 @@ body {
     padding: 20px 0;
 }
 
+.hide {
+    display: none !important;
+}
+
+.error-message {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.red {
+    color: hsl(0, 100%, 74%);
+    font-size: 0.7em;
+}
+
+label {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+label::after {
+    display: none;
+    content: '';
+    position: absolute;
+    background: url('images/icon-error.svg');
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+    margin-left: 250px;
+}
+
 input {
     font-family: 'Poppins', sans-serif;
     width: 80%;
     padding: 15px;
-    margin-bottom: 15px;
     border-radius: 5px;
     border: hsl(246, 25%, 77%) 1px solid;
     font-weight: 600;
+    margin: 10px auto;
+}
+
+.red-border {
+    border: hsl(0, 100%, 74%) 1px solid;
 }
 
 button {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    width: 90%;
+    width: 88%;
     background-color: hsl(154, 59%, 51%);
     border: none;
     border-radius: 5px;
     padding: 15px;
     color: white;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.input-card p {
+.grey {
     text-align: center;
     font-size: 0.7em;
     width: 70%;
@@ -155,6 +207,11 @@ button {
         width: 40%;
     }
 
+    .error-message {
+        width: 80%;
+        text-align: right;
+    }
+
     .purple-card {
         width: 100%;
         padding: 0;
@@ -169,6 +226,12 @@ button {
     .input-card p {
         width: 80%;
         font-size: 0.6em;
+        margin-bottom: 20px;
+    }
+
+    label::after {
+        margin-top: 15px;
+        margin-left: 330px;
     }
 
 }
