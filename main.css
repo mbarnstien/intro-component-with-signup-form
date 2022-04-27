@@ -62,10 +62,11 @@ body {
 .purple-card p {
     width: 70%;
     margin-left: 40px;
+    font-weight: 400;
 }
 
 .purple-card span {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .input-card {
@@ -129,6 +130,45 @@ button {
     body {
         background-image: url('images/bg-intro-desktop.png');
         background-color: hsl(0, 100%, 74%);
+    }
+
+    .container {
+        flex-direction: row;
+        margin-top: 100px;
+    }
+
+    .text-container {
+        width: 50%;
+        text-align: left;
+    }
+
+    .text-container h1 {
+        margin-top: 50px;
+        font-size: 2.75em;
+    }
+
+    .text-container p {
+        margin: 0;
+    }
+
+    .card-container {
+        width: 40%;
+    }
+
+    .purple-card {
+        width: 100%;
+        padding: 0;
+    }
+
+    .purple-card p {
+        width: 100%;
+        margin: 15px auto;
+        font-size: 0.75em;
+    }
+
+    .input-card p {
+        width: 80%;
+        font-size: 0.6em;
     }
 
 }
