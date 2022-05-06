@@ -116,7 +116,9 @@ label {
 }
 
 svg {
-    display: none;
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 250px;
 }
 
 input {
@@ -221,8 +223,7 @@ button {
         margin-bottom: 20px;
     }
 
-    label::after {
-        margin-top: 15px;
+    svg {
         margin-left: 330px;
     }
 
