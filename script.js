@@ -55,3 +55,30 @@ button.addEventListener('click', (e) => {
 
 })
 
+fname.addEventListener('change', (e) => {
+    fnameError.classList.add('hide');
+    fname.classList.remove('red-border');
+    fnameIcon.classList.add('hide');
+    e.preventDefault();
+});
+
+lname.addEventListener('change', (e) => {
+    lnameError.classList.add('hide');
+    lname.classList.remove('red-border');
+    lnameIcon.classList.add('hide');
+    e.preventDefault();
+});
+
+email.addEventListener('change', (e) => {
+    emailError.classList.add('hide');
+    email.classList.remove('red-border');
+    emailIcon.classList.add('hide');
+    e.preventDefault();
+});
+
+password.addEventListener('change', (e) => {
+    passwordError.classList.add('hide');
+    password.classList.remove('red-border');
+    passwordIcon.classList.add('hide');
+     e.preventDefault();
+});
